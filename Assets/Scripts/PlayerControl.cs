@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+//using QuickOutline;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour
@@ -81,6 +82,9 @@ public class PlayerControl : MonoBehaviour
     private int emote3Hash;
     private int emote4Hash;
 
+    private IInteractable lastHighlightedInteractable;
+    private Outline lastOutlineComponent;
+
     private void OnValidate()
     {
         if (hitMask.value == 0)
@@ -141,6 +145,7 @@ public class PlayerControl : MonoBehaviour
         );
 
         HandleEmotes();
+        UpdateInteractableHighlight();
 
         if (Input.GetKeyDown(PrimaryAction))
         {
@@ -496,6 +501,41 @@ public class PlayerControl : MonoBehaviour
             heldItemText.text = "Holding: Nothing";
         else
             heldItemText.text = "Holding: " + heldItem.GetDisplayName();
+    }
+
+    private void UpdateInteractableHighlight()
+    {
+        IInteractable nearest = GetNearestValidInteractable(castRadius);
+
+        // Remove outline from previous object if we've moved to a new one or nothing is nearby
+        if (lastHighlightedInteractable != null && (nearest == null || nearest != lastHighlightedInteractable))
+        {
+            if (lastOutlineComponent != null)
+                lastOutlineComponent.enabled = false;
+            lastHighlightedInteractable = null;
+            lastOutlineComponent = null;
+        }
+
+        // Apply outline to the new nearest interactable
+        if (nearest != null)
+        {
+            MonoBehaviour mb = nearest as MonoBehaviour;
+            if (mb == null) return;
+
+            // Check if Outline component exists, otherwise add it
+            Outline outline = mb.GetComponent<Outline>();
+            if (outline == null)
+                outline = mb.gameObject.AddComponent<Outline>();
+
+            // Configure outline settings
+            outline.OutlineMode = Outline.Mode.OutlineAll;
+            outline.OutlineWidth = 6f;
+            outline.OutlineColor = (playerNumber == 1) ? Color.blue : Color.yellow;
+            outline.enabled = true;
+
+            lastHighlightedInteractable = nearest;
+            lastOutlineComponent = outline;
+        }
     }
 
     private void OnDrawGizmos()

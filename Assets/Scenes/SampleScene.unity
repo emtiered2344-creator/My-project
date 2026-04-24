@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 11444743}
   - component: {fileID: 11444742}
   - component: {fileID: 11444745}
+  - component: {fileID: 11444746}
   m_Layer: 3
   m_Name: Serve
   m_TagString: Untagged
@@ -369,6 +370,24 @@ MonoBehaviour:
   interactionPanel: {fileID: 0}
   animationTime: 0.5
   totalServed: 0
+--- !u!114 &11444746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11444739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &51318500
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +402,7 @@ GameObject:
   - component: {fileID: 51318503}
   - component: {fileID: 51318502}
   - component: {fileID: 51318506}
+  - component: {fileID: 51318507}
   m_Layer: 3
   m_Name: Fryer
   m_TagString: Untagged
@@ -529,6 +549,24 @@ MonoBehaviour:
   localPosition: {x: 0, y: 0, z: 0}
   localEulerAngles: {x: 0, y: 0, z: 0}
   localScale: {x: 1, y: 1, z: 1}
+--- !u!114 &51318507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51318500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &103710063
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +580,7 @@ GameObject:
   - component: {fileID: 103710067}
   - component: {fileID: 103710066}
   - component: {fileID: 103710069}
+  - component: {fileID: 103710070}
   m_Layer: 3
   m_Name: Coffee
   m_TagString: Untagged
@@ -657,6 +696,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionPanel: {fileID: 0}
   animationTime: 0.5
+--- !u!114 &103710070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103710063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &109558228
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &109558229
 RectTransform:
   m_ObjectHideFlags: 0
@@ -708,6 +765,7 @@ GameObject:
   - component: {fileID: 188659249}
   - component: {fileID: 188659248}
   - component: {fileID: 188659251}
+  - component: {fileID: 188659253}
   - component: {fileID: 188659252}
   m_Layer: 3
   m_Name: Cook
@@ -855,6 +913,24 @@ MonoBehaviour:
   localPosition: {x: 0, y: 0, z: 0}
   localEulerAngles: {x: 0, y: 0, z: 0}
   localScale: {x: 1, y: 1, z: 1}
+--- !u!114 &188659253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188659245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &194892778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4653,6 +4729,7 @@ GameObject:
   - component: {fileID: 775724060}
   - component: {fileID: 775724059}
   - component: {fileID: 775724062}
+  - component: {fileID: 775724063}
   m_Layer: 3
   m_Name: Ingredient Box
   m_TagString: Untagged
@@ -4777,6 +4854,24 @@ MonoBehaviour:
   chickenButton: {fileID: 649228649}
   hamButton: {fileID: 883620123}
   closeButton: {fileID: 849586198}
+--- !u!114 &775724063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775724056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &781017825
 GameObject:
   m_ObjectHideFlags: 0
@@ -6448,6 +6543,7 @@ GameObject:
   - component: {fileID: 1081560297}
   - component: {fileID: 1081560296}
   - component: {fileID: 1081560295}
+  - component: {fileID: 1081560299}
   m_Layer: 3
   m_Name: Cups
   m_TagString: Untagged
@@ -6563,6 +6659,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081560293}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1081560299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081560293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1120649191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6989,7 +7103,7 @@ GameObject:
   - component: {fileID: 1183302477}
   - component: {fileID: 1183302476}
   m_Layer: 0
-  m_Name: Jake
+  m_Name: James
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7160,6 +7274,7 @@ GameObject:
   - component: {fileID: 1205994666}
   - component: {fileID: 1205994665}
   - component: {fileID: 1205994668}
+  - component: {fileID: 1205994669}
   m_Layer: 3
   m_Name: Soda
   m_TagString: Untagged
@@ -7280,6 +7395,24 @@ MonoBehaviour:
   iceTeaButton: {fileID: 781017829}
   orangeJuiceButton: {fileID: 1941279348}
   closeButton: {fileID: 531221863}
+--- !u!114 &1205994669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205994662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1211653813
 GameObject:
   m_ObjectHideFlags: 0
@@ -9779,6 +9912,7 @@ GameObject:
   - component: {fileID: 1614920723}
   - component: {fileID: 1614920722}
   - component: {fileID: 1614920725}
+  - component: {fileID: 1614920726}
   m_Layer: 3
   m_Name: Plate
   m_TagString: Untagged
@@ -9894,6 +10028,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionPanel: {fileID: 0}
   animationTime: 0.5
+--- !u!114 &1614920726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614920719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1616047430
 GameObject:
   m_ObjectHideFlags: 0
